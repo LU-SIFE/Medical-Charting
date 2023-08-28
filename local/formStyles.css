@@ -1,0 +1,450 @@
+body {
+    padding: 0 0 25px 0;
+}
+#vital-submit, #patient-draft-submit, #orders-submit {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 15px;
+    float: right;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background: #183969;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.submit-back-button{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 25px;
+    float: right;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background: #183969;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+#vital-submit:hover, #patient-draft-submit:hover, #orders-submit:hover{
+    background: #0c1f3b;
+}
+.form-container {
+    display: grid;
+    grid-template-areas:
+                "form-header"
+                "column-headers"
+                "form";
+    width: 95%;
+    margin: 15px auto 0 auto;
+    background: #EEEEEE;
+    border-radius: 10px;
+    padding: 0 0 10px 0;
+    border: solid 3px #C4C4C4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.container-header {
+    background-image: linear-gradient(to bottom right, #183969, #13305b);
+    width: 100%;
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+}
+
+/*TPR GRID*/
+.column-header-container.tpr {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 6fr 2fr;
+}
+.form-row.tpr {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 2fr 2fr 2fr 2fr;
+}
+
+/*CRIES, NONVERBAL PAIN, & RASS GRID*/
+.column-header-container.cries, .column-header-container.pain, .column-header-container.nvp, .column-header-container.rass {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+.form-row.cries, .form-row.pain, .form-row.nvp, .form-row.rass {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*GROWTH GRID*/
+.column-header-container.growth {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr 1fr 2fr 3fr;
+}
+.form-row.growth {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr 1fr 2fr 3fr;
+}
+
+/*PAIN SCALE GRID*/
+.column-header-container.pain-scale {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.form-row.pain-scale {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*INTAKE OUTPUT GRID*/
+.column-header-container.io {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr 2fr;
+}
+.form-row.io {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr 2fr;
+}
+
+/*PO Intake & GLUCOSE Grid*/
+.column-header-container.po, .column-header-container.glucose {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    width: 50%;
+    margin: 0 auto;
+}
+.form-row.po, .form-row.glucose {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*SURVEY GRID*/
+.column-header-container.survey {
+    display: grid;
+    grid-template-columns: 7fr;
+    width: 90%;
+    margin: 0 auto;
+}
+.form-row.survey{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*NEW ORDER GRID*/
+.column-header-container.new-order {
+    display: grid;
+    grid-template-columns: 1.25fr 4fr;
+    width: 80%;
+}
+.form-row.new-order {
+    display: grid;
+    grid-template-columns: 1.25fr 3fr 1fr;
+    width: 80%;
+}
+
+/*ORDER COMMENT GRID*/
+.column-header-container.order-comments {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 4fr;
+    width: 80%;
+}
+.form-row.order-comments {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 4fr;
+    width: 80%;
+}
+
+/*PATIENT DRAFT GRID*/
+.form-row.patient-draft {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.form-row.patient-draft-img {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+}
+
+.form-row.patient-span{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 4em;
+}
+
+.form-row.patient-draft {
+    height: 4em;
+}
+
+.row-span-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-group input {
+    flex: .75;
+}
+
+.patient-draft-img img {
+    width: 95%;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.radio-group h4{
+    margin: auto 0;
+    font-weight: normal;
+}
+
+.radio-group input[type=radio] {
+    margin: auto 0;
+}
+
+.column-header-container h3 {
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.form-row h3 {
+    margin: 10px 0;
+}
+.column-header-container {
+    margin-left: 10px;
+}
+.column-header-container * {
+    font-weight: normal;
+}
+.container-header h2 {
+    margin: 10px 0 10px 25px;
+    color: white;
+}
+input[type=checkbox] {
+    align-self: center;
+}
+input[type=text], select, input[type=datetime-local] {
+    margin: 5px 0 5px 0;
+    border: #C4C4C4 solid 2px;
+    border-radius: 5px;
+    color: #7e7e7e;
+    overflow: hidden;
+    width: 90%;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+option {
+    text-overflow: clip;
+}
+.form-container form {
+    margin: 0 10px 0 10px;
+}
+.row-header {
+    font-weight: lighter;
+    font-style: italic;
+}
+.form-container hr {
+    border:none;
+    border-top: 2px dotted #c4c4c4;
+    margin: 1px 0;
+}
+.pain-scale-container {
+    padding: 0 10px;
+}
+.pain-scale-container {
+    margin-top: 10px;
+    text-align: center;
+}
+.horizontal-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-self: start;
+    width: 95%;
+}
+.horizontal-group *{
+    margin: 0 5px;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    background: #EEEEEE;
+    height: 50%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.searchContainer input{
+    align-self: start;
+    height: 15%;
+    padding: 10px;
+}
+
+.queryResult {
+    display: flex;
+    justify-content: space-between;
+    background: #143058;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 85%;
+    margin: 5px auto;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.resultDataContainer h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.resultDataContainer h3 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .75em;
+}
+
+.resultDataContainer h4 {
+    font-weight: normal;
+    font-size: 1em;
+    margin: 15px 0 0 0;
+}
+
+.resultButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%
+}
+
+.resultButtonContainer button {
+    height: 50%;
+    border-radius: 5px;
+    background: white;
+    color: #143058;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.resultButtonContainer button:hover {
+    filter: brightness(.75);
+}
+
+#center-div h1 {
+    justify-self: center;
+    align-self: center;
+    color: gray;
+}
+
+#center-div {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#med-search-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*LOGIN PAGE STYLES*/
+.login-container {
+    background: #EEEEEE;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    right: 30%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-content {
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+#login-password, #login-username {
+    height: 2.5em;
+    width: 100%;
+}
+
+.horizontal-group.around {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.horizontal-group{
+    height: 50%;
+    width: 25%;
+    flex: .5fr;
+    margin: 0 0 0 10px;
+}
+
+.login-content h1 {
+    font-size: 2.5em;
+    color: #143058;
+}
+
+.login-content > div, .login-content input{
+    margin: 0 0 0 10px;
+}
+
+.login-content input {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    vertical-align: center;
+}
+
+.login-container img {
+    width: 75px;
+}
+
+@media (max-height: 800px) {
+    .login-container {
+        height: 50%;
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    list-style: none;
+    /*overflow: hidden;*/
+}
+
+.sidebar {
+    width: 230px;
+    background: #143058;
+    height: 100%;
+    position: static;
+}
+
+nav ul{
+    background: #143058;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 35px;
+    transition: letter-spacing .25s;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    text-align: left;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    color: white;
+    background: #1c437c;
+    border-left-color: white;
+}
+
+nav ul ul {
+    position: static;
+    display: none;
+}
+
+nav ul .health-show.show {
+    display: block;
+}
+
+nav ul .pharm-show.show1 {
+    display: block;
+}
+
+nav ul .acc-show.show2 {
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 20px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+}
+
+nav ul li a span {
+    margin-left: 10px;
+    transition:transform 0.4s;
+}
+
+nav ul li a span.rotate {
+    transform: rotate(-180deg);
+}

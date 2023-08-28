@@ -18,6 +18,10 @@ Charting software and documentation for Catalyst medical classes
 > Regan (Programmer/Front End)<br>
 > Ty (Lead Programmer)<br>
 
+### Year 3:
+
+> [Lucy Leix](https://github.com/LU-SIFE) (Project Lead)<br>
+
 to setup xamp tables:
 ```
 CREATE TABLE IF NOT EXISTS `accounts` (

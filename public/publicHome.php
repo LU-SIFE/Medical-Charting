@@ -4,8 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Medical Charting</title>
 
@@ -36,8 +35,9 @@
     <br>
     <a class="new-button" href="../Patient-Data-Forms/vitalsInput.php">New</a>
     <br>
+    <h2 class="sub-category-head">TPR B/P O2</h2>
     <div class="sub-category">
-        <h2 class="sub-category-head">TPR B/P O2</h2>
+        
         <div class="sub-category-glance">
             <h3 class="glance-date">03/25/2022</h3>
             <div class="glance-data">

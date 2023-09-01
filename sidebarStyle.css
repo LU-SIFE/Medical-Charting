@@ -8,10 +8,10 @@
 }
 
 .sidebar {
-    width: 230px;
+    width: 12%;
     background: #143058;
     height: 100%;
-    position: static;
+    position: fixed;
 }
 
 nav ul{
@@ -39,7 +39,7 @@ nav ul li a {
     color: #fff;
     font-size: 18px;
     padding-left: 20px;
-    font-weight: 500;
+    font-weight: bold;
     display: block;
     width: 100%;
     border-left: 3px solid transparent;

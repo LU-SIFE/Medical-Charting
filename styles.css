@@ -5,40 +5,27 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-
 button{
     cursor: pointer;
 }
 
 /*GLANCE HEADER*/
-
 header {
     justify-content: space-between;
     width: 100%;
     align-content: stretch;
     position: sticky;
     top: 0;
+    gap: 25px;
     background: #EEEEEE;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 10px 10px;
-    text-decoration: none;
-    height: 15vh;
+    text-decoration:none;
 }
 
-/* Footer Styles */
 
-footer {
-    margin: 0;
-    width: 100%;
-    height: 5%;
-}
 
-footer a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-header, .header-content, .header-logo, .img-frame, .patient-glance, footer {
+header, .header-content, .header-logo, .img-frame, .patient-glance {
     display: flex;
 }
 
@@ -46,16 +33,16 @@ header, .header-content, .header-logo, .img-frame, .patient-glance, footer {
     justify-content: center;
     align-items: center;
     justify-self: flex-end;
+    padding-right: 15px;
 }
 
 .header-logo img{
-    width: 100%;  
-    padding-right: 5em;
+   padding-right: 4em;
 }
 
 .img-frame {
     justify-content: center;
-    margin: 0 0 0 15px; 
+    margin: 0 0 0 15px;
 }
 
 .patient-photo {
@@ -76,17 +63,12 @@ header, .header-content, .header-logo, .img-frame, .patient-glance, footer {
     font-size: 1.25em;
     text-decoration:none;
 }
-.patient-glance-content_allergies{
-    color: red;
-    font-size: 1.25em;
-}
 
 .patient-glance-content span {
     font-weight: bold;
 }
 
 /*CATEGORY CONTAINER*/
-
 main {
     display: flex;
     align-items: stretch;
@@ -97,50 +79,43 @@ main {
 
 .form-overflow-container {
     width: 100vw;
-    padding: 1em;
+    margin-left: 10px;
 }
 
 .category-container {
     width: 100%;
-    height: 67vh;
 }
 
 .category-header {
     font-size: 3.5em;
-    margin: 0 0 0 2.5%;
+    margin: 25px 0 0 2.5%;
     font-weight: bold;
-}
-
-.category-container h1 {
-    width: 50%;
-}
-
-.sub-category {
-    margin: 5vh .5vw 1vh .5vw;
-    display: flex;
 }
 
 .sub-category-head {
     font-size: 2em;
-    margin: 0 .5% 0 2%;
+    margin: 0 0 0 5%;
     font-weight: bold;
     font-style: italic;
-    display: flex;
 }
 
+.sub-category {
+    height: 100%;
+}
 
 .sub-category-glance {
-    width: 45%;
-    margin: 1.25%;
+    margin: 20px 50px 20px 350px;
     display: flex;
+    justify-content: space-between;
     background: #EEEEEE;
-    border-radius: 1em;
-    padding: 1vh 1.25% 1vh 1.25%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.25em;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .glance-date {
-    flex: 2;
+    flex: 1;
 }
 
 .glance-data {
@@ -151,19 +126,6 @@ main {
 }
 
 .glance-data h4 {
-    font-weight: normal;
-    padding-bottom: 15%;
-}
-
-.glance-data2 h4 {
-    width: 25%;
-}
-
-.patient_name {
-    font-weight: normal;
-}
-
-.glance-data2 p {
     font-weight: normal;
 }
 
@@ -176,18 +138,17 @@ main {
 
 .glance-button, .glance-delete {
     background: #143058;
-    border-radius: .5em;
+    border-radius: 10px;
     height: 1.75em;
-    width: 35%;
     color: white;
     font-size: 1.25em;
+    border: none;
+    width: 50%;
+    float: right;
+    margin: 0 5px;
     text-align: center;
-    text-decoration: none;
-    padding-top: 0.5em;
-    flex: 1;
-    align-self: center;
-    display: flex;
-    justify-content: space-evenly;
+    text-decoration:none;
+    padding-top: .5em;
 }
 
 .glance-button:hover {
@@ -207,16 +168,10 @@ main {
 
 /*Dashboard Styles */
 
-nav ul {
-    padding-top: 2.5vh;
-}
-
 nav li{
     display: inline;
-    text-align: center;
     text-align: right;
-    padding-left: 5em;
-    padding-right: 2em;
+    padding-left: 12em;
 }
 
 nav li a{
@@ -231,79 +186,76 @@ nav li a:hover{
 }
 
 header img{
-    padding: 1%;
-    height: 10vh;
-    width: auto;
+    padding: 1em;
+    height: 9em;
+    width: 8em;
     position: relative;
     left: 2em;
 }
 
-.logout {
-    margin: 0;
-    margin-top:2em;
-}
-
-.logout p{
-    font-size: 20px;
+.logout{
+    font-size: .5em;
     text-decoration:none;
-    font-weight: bold;
-    padding-right: 2%;
-    padding-bottom: 1%;
-    text-align:center;
+    font-weight:bold;
+    padding-left: 65em;
+    padding-top: 10em;
 }
 
-.logout a {
-    color: #143058;
-    text-decoration: none;
-    float: right;
-    
-}
-
-.logout a:hover{
-    color: red;
-}
-
-.hero p {
-    font-size: 20px;
-    text-decoration:none;
-    font-weight: bold;
-    padding-right: 2%;
-    padding-top: 12%;
-}
-
-.hero p a {
-    color: #EEEEEE;
-    text-decoration: none;
-    float: right;
-}
-
-.hero p a:hover {
-    color: red;
+.logout:hover{
+    color: slategray;
 }
 
 .hero{
     background-color:#183b6c;
-    color: white;
-    padding-top: 25vh;
-    height: 60vh;
+    color:white;
+    padding-bottom: 20.3em;
+    margin:auto;
+    padding-top: 14em;
 }
 
 .hero h1{
-    margin: auto;
+    margin:auto;
     font-size: 7em;
-    text-align: center;
+    text-align:center;
+}
+/*Patient Styles */
+
+.patient-button{
+    background: #143058;
+    border-radius: 10px;
+    height: 1.75em;
+    color: white;
+    font-size: 1.25em;
+    border: none;
+    width: 17%;
+    float: right;
+    margin: 0 5px;
+    margin-top: 1.5em;
+    text-align:center;
+    text-decoration:none;
+    padding-top:.5em;
 }
 
-/*Patient Styles */
+
+.patient-button:hover{
+    filter: brightness(.75);
+    cursor: pointer;
+}
+
+.patient-button a{
+    color:white;
+    text-decoration:none;
+}
 
 .glance-data2 {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 80%;
+    justify-content: space-evenly;
+    flex: 4;
+    align-self: center;
+    margin-left: -5em;
 }
 
-.return-button {
+.return-button{
     text-decoration: none;
 }
 
@@ -341,7 +293,6 @@ header img{
 }
 
 /* New button styles */ 
-
 .new-button{
     background: #143058;
     border-radius: 10px;
@@ -349,31 +300,11 @@ header img{
     color: white;
     font-size: 1.25em;
     border: none;
-    width: 20%;
+    width: 17%;
     float: right;
-    margin-right: 2vw;
-    margin-top: 1.5vh;
+    margin: 0 5px;
+    margin-top: 1.5em;
     text-align:center;
     text-decoration:none;
-    padding-top: .5em;
-}
-
-.new-button:hover, .back-button:hover{
-    filter: brightness(.75);
-    cursor: pointer;
-}
-
-/* Laptop size changes */
-
-@media (max-height: 800px) {
-    
-    .sub-category-glance {
-        width: 95%;
-        font-size: 1em;
-    }
-    
-    .sub-category {
-        display: block;
-    }
-    
+    padding-top:.5em;
 }

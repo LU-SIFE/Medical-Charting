@@ -56,8 +56,7 @@ header {
 }
 
 .sub-category-glance {
-    width: 85%;
-    margin: 20px 0 0 5%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     background: #EEEEEE;

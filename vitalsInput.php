@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Document 2</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -29,8 +29,7 @@ include "../local/patientGlanceHeader.php";
     <?php
     include "../sidebar.html"
     ?>
-    <div class="form-overflow-container" id="patient_vital_input">
-        
+    <div class="form-overflow-container">
         <div class="form-container tpr">
             <div class="container-header tpr" style="grid-area: form-header">
                 <h2>TPR B/P O2</h2>
@@ -207,6 +206,256 @@ include "../local/patientGlanceHeader.php";
                 </div>
             </form>
         </div>
+<!----> 
+        <div class="form-container cries">
+            <div class="container-header cries" style="grid-area: form-header">
+                <h2>CRIES Scale</h2>
+            </div>
+            <div class="column-header-container cries" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+                <h3 class="column-header" style="grid-column: 3">Description</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="cries-form">
+                <hr>
+                <div class="form-row cries">
+                    <h3 class="row-header cries">Crying:</h3>
+                    <select name="crying-value" id="crying-value">
+                        <option value="default">Value</option>
+                        <option value="0-No cry or cry that is non high-pitched">0-No cry or cry that is non
+                            high-pitched
+                        </option>
+                        <option value="1-Cry high-pitched but baby is easily consolable">1-Cry high-pitched but baby is
+                            easily consolable
+                        </option>
+                        <option value="2-Cry high-pitched but baby is inconsolable">2-Cry high-pitched but baby is
+                            inconsolable
+                        </option>
+                    </select>
+                    <input type="text" id="crying-description">
+                </div>
+                <hr>
+                <div class="form-row cries">
+                    <h3 class="row-header cries">Requires O2 for SaO2 < 95%:</h3>
+                    <select name="req-o2-value" id="req-o2-value">
+                        <option value="default">Value</option>
+                        <option value="0-No oxygen required">0-No oxygen required</option>
+                        <option value="1-<30% oxygen required">1-&lt;30% oxygen required</option>
+                        <option value="1->30% oxygen required">1-&gt;30% oxygen required</option>
+                    </select>
+                    <input type="text" id="req-o2-description">
+                </div>
+                <hr>
+                <div class="form-row cries">
+                    <h3 class="row-header cries">Increased vital Signs (BP & HR):</h3>
+                    <select name="inc-vi-value" id="inc-vi-value">
+                        <option value="default">Value</option>
+                        <option value="0-Both HR & BP unchanged or less than baseline">0-0-Both HR & BP unchanged or
+                            less than baseline
+                        </option>
+                        <option value="1-HR & BP increased but increase in <20% of baseline">1-HR & BP increased but
+                            increase in &lt;20% of baseline
+                        </option>
+                        <option value="2-HR or BP is increased in >20% over baseline">2-HR or BP is increased in &gt;20%
+                            over baseline
+                        </option>
+                    </select>
+                    <input type="text" id="inc-vi-description">
+                </div>
+                <hr>
+                <div class="form-row cries">
+                    <h3 class="row-header cries">Expression:</h3>
+                    <select name="expression-value" id="expression-value">
+                        <option value="default">Value</option>
+                        <option value="0-No grimace present">0-No grimace present</option>
+                        <option value="1-Grimace alone is present">1-Grimace alone is present</option>
+                        <option value="2-Grimace and non-cry vocalization grunt is present">2-Grimace and non-cry vocalization grunt is present</option>
+                    </select>
+                    <input type="text" id="expression-description">
+                </div>
+                <hr>
+                <div class="form-row cries">
+                    <h3 class="row-header cries">Sleepless:</h3>
+                    <select name="sleepless-value" id="sleepless-value">
+                        <option value="default">Value</option>
+                        <option value="0-Child has been continuously asleep">0-Child has been continuously asleep
+                        </option>
+                        <option value="1-Child has awakened at frequent intervals">1-Child has awakened at frequent
+                            intervals
+                        </option>
+                        <option value="2-Child has been awake constantly">2-Child has been awake constantly</option>
+                    </select>
+                    <input type="text" id="sleepless-description">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container nvp">
+            <div class="container-header nvp" style="grid-area: form-header">
+                <h2>Nonverbal Pain Assessment:</h2>
+            </div>
+            <div class="column-header-container nvp" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+                <h3 class="column-header" style="grid-column: 3">Description</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="nvp-form">
+                <hr>
+                <div class="form-row nvp">
+                    <h3 class="row-header nvp">Face:</h3>
+                    <select name="face-value" id="face-value">
+                        <option value="default">Value</option>
+                        <option value="0-No particular expression or smile">0-No particular expression or smile</option>
+                        <option value="1-Occasional grimace, tearing, frowning, wrinkled forehead">1-Occasional grimace,
+                            tearing, frowning, wrinkled forehead
+                        </option>
+                        <option value="2-Frequent grimace, tearing, frowning, wrinkled forehead">2-Frequent grimace,
+                            tearing, frowning, wrinkled forehead
+                        </option>
+                    </select>
+                    <input type="text" id="face-description">
+                </div>
+                <hr>
+                <div class="form-row nvp">
+                    <h3 class="row-header nvp">Activity:</h3>
+                    <select name="activity-value" id="activity-value">
+                        <option value="default">Value</option>
+                        <option value="0-No particular expression or smile">0-No particular expression or smile</option>
+                        <option value="1-Occasional grimace, tearing, frowning, wrinkled forehead">1-Occasional grimace,
+                            tearing, frowning, wrinkled forehead
+                        </option>
+                        <option value="2-Frequent grimace, tearing, frowning, wrinkled forehead">2-Frequent grimace,
+                            tearing, frowning, wrinkled forehead
+                        </option>
+                    </select>
+                    <input type="text" id="activity-description">
+                </div>
+                <hr>
+                <div class="form-row nvp">
+                    <h3 class="row-header nvp">Guarding:</h3>
+                    <select name="guarding-value" id="guarding-value">
+                        <option value="default">Value</option>
+                        <option value="0-Lying quietly, no positioning of hand over areas of body">0-Lying quietly, no
+                            positioning of hand over areas of body
+                        </option>
+                        <option value="1-Splinting areas of the body, tense">1-Splinting areas of the body, tense
+                        </option>
+                        <option value="2-Rigid, stiff">2-Rigid, stiff</option>
+                    </select>
+                    <input type="text" id="guarding-description">
+                </div>
+                <hr>
+                <div class="form-row nvp">
+                    <h3 class="row-header nvp">Physiology:</h3>
+                    <select name="physiology-value" id="physiology-value">
+                        <option value="default">Value</option>
+                        <option value="0-Stable vital signs">0-Stable vital signs</option>
+                        <option value="1-Change in any of the following: SBP>20mmHg,HR>20/min">1-Change in any of the
+                            following: SBP>20mmHg,HR>20/min
+                        </option>
+                        <option value="2-Change in any of the following: SBP>30mmHg,HR>25/min">2-Change in any of the
+                            following: SBP>30mmHg,HR>25/min
+                        </option>
+                    </select>
+                    <input type="text" id="physiology-description">
+                </div>
+                <hr>
+                <div class="form-row nvp">
+                    <h3 class="row-header nvp">Respiratory:</h3>
+                    <select name="respiratory-value" id="respiratory-value">
+                        <option value="default">Value</option>
+                        <option value="0-Baseline RR/SpO2, Compliant with ventilator">0-Baseline RR/SpO2, Compliant with
+                            ventilator
+                        </option>
+                        <option value="1-RR > 10 above baseline, or 5% decrease in SpO2, Mild asynchrony with ventilator">
+                            1-RR > 10 above baseline, or 5% decrease in SpO2, Mild asynchronous with ventilator
+                        </option>
+                        <option value="2-RR > 20 above baseline, or 10% decrease in SpO2, Severe asynchrony with ventilator">
+                            2-RR > 20 above baseline, or 10% decrease in SpO2, Severe asynchrony with ventilator
+                        </option>
+                    </select>
+                    <input type="text" id="respiratory-description">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container pain-scale">
+            <div class="container-header pain-scale" style="grid-area: form-header">
+                <h2>Pain Scale:</h2>
+            </div>
+            <div class="column-header-container pain-scale" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="nvp-form">
+                <hr>
+                <div class="form-row pain-scale">
+                    <h3 class="row-header pain-scale">Pain:</h3>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="0">
+                        <h3>0</h3>
+                        <h4>No Hurt</h4>
+                    </div>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="2">
+                        <h3>2</h3>
+                        <h4>Hurts A Little</h4>
+                    </div>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="4">
+                        <h3>4</h3>
+                        <h4>Hurts A Little More</h4>
+                    </div>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="6">
+                        <h3>6</h3>
+                        <h4>Hurts Even More</h4>
+                    </div>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="8">
+                        <h3>8</h3>
+                        <h4>Hurts Whole Lot</h4>
+                    </div>
+                    <div class="pain-scale-container">
+                        <input type="radio" name="pain-scale-value" value="10">
+                        <h3>10</h3>
+                        <h4>Hurts Worst</h4>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container rass">
+            <div class="container-header rass" style="grid-area: form-header">
+                <h2>Richmond Agitation-Sedation Scale (RASS):</h2>
+            </div>
+            <div class="column-header-container rass" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+                <h3 class="column-header" style="grid-column: 3">Description</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="rass-form">
+                <hr>
+                <div class="form-row rass">
+                    <h3 class="row-header rass">Level of Consciousness:</h3>
+                    <select name="loc-value" id="loc-value">
+                        <option value="default">Value</option>
+                        <option value="0-No particular expression or smile">0-No particular expression or smile</option>
+                        <option value="Combative +4">Combative +4</option>
+                        <option value="Very Agitated +3">Very Agitated +3</option>
+                        <option value="Agitated +2">Agitated +2</option>
+                        <option value="Restless +1">Restless +1</option>
+                        <option value="Alert and Calm 0">Alert and Calm 0</option>
+                        <option value="Drowsy -1">Drowsy -1</option>
+                        <option value="Light Sedation -2">Light Sedation -2</option>
+                        <option value="Moderate Sedation -3">Moderate Sedation -3</option>
+                        <option value="Deep Sedation -4">Deep Sedation -4</option>
+                        <option value="Unarousable -5">Unarousable -5</option>
+                    </select>
+                    <input type="text" id="loc-description">
+                </div>
+            </form>
+        </div>
 
         <div class="form-container growth">
             <div class="container-header growth" style="grid-area: form-header">
@@ -233,6 +482,7 @@ include "../local/patientGlanceHeader.php";
                     </select>
                     <select name="weight-percentile" id="weight-percentile">
                         <option value="default">Growth Chart</option>
+                        <option value="<5th Percentile>"><5th Percentile></option>
                         <option value="5th Percentile">5th Percentile</option>
                         <option value="10th Percentile">10th Percentile</option>
                         <option value="25th Percentile">25th Percentile</option>
@@ -240,6 +490,7 @@ include "../local/patientGlanceHeader.php";
                         <option value="75th Percentile">75th Percentile</option>
                         <option value="90th Percentile">90th Percentile</option>
                         <option value="95th Percentile">95th Percentile</option>
+                        <option value=">95th Percentile"><95th Percentile/option>
                     </select>
                     <input type="text" id="weight-description">
                 </div>
@@ -254,6 +505,7 @@ include "../local/patientGlanceHeader.php";
                     </select>
                     <select name="height-length-percentile" id="height-length-percentile">
                         <option value="default">Growth Chart</option>
+                        <option value="<5th Percentile>"><5th Percentile></option>
                         <option value="5th Percentile">5th Percentile</option>
                         <option value="10th Percentile">10th Percentile</option>
                         <option value="25th Percentile">25th Percentile</option>
@@ -261,6 +513,7 @@ include "../local/patientGlanceHeader.php";
                         <option value="75th Percentile">75th Percentile</option>
                         <option value="90th Percentile">90th Percentile</option>
                         <option value="95th Percentile">95th Percentile</option>
+                        <option value=">95th Percentile"><95th Percentile/option>
                     </select>
                     <input type="text" id="height-length-description">
                 </div>
@@ -275,6 +528,7 @@ include "../local/patientGlanceHeader.php";
                     </select>
                     <select name="circumference-percentile" id="circumference-percentile">
                         <option value="default">Growth Chart</option>
+                        <option value="<5th Percentile>"><5th Percentile></option>
                         <option value="5th Percentile">5th Percentile</option>
                         <option value="10th Percentile">10th Percentile</option>
                         <option value="25th Percentile">25th Percentile</option>
@@ -282,6 +536,7 @@ include "../local/patientGlanceHeader.php";
                         <option value="75th Percentile">75th Percentile</option>
                         <option value="90th Percentile">90th Percentile</option>
                         <option value="95th Percentile">95th Percentile</option>
+                        <option value=">95th Percentile"><95th Percentile/option>
                     </select>
                     <input type="text" id="circumference-description">
                 </div>
@@ -296,6 +551,107 @@ include "../local/patientGlanceHeader.php";
             </form>
         </div>
 
+        <div class="form-container io">
+            <div class="container-header io" style="grid-area: form-header">
+                <h2>Intake & Output:</h2>
+            </div>
+            <div class="column-header-container io" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+                <h3 class="column-header" style="grid-column: 3">Unit</h3>
+                <h3 class="column-header" style="grid-column: 4">Qualifier(s)</h3>
+                <h3 class="column-header" style="grid-column: 5">Description</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="io-form">
+                <hr>
+                <div class="form-row io">
+                    <h3 class="row-header">Intake:</h3>
+                    <input type="text" id="intake-value">
+                    <h4 style="margin: auto 0">ml</h4>
+                    <select name="intake-method" id="intake-method">
+                        <option value="default">Method</option>
+                        <option value="Oral">Oral</option>
+                        <option value="Intravenous">Intravenous</option>
+                        <option value="Blood">Blood</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <select name="percent-consumed" id="percent-consumed">
+                        <option value="default">% of Meal Consumed</option>
+                        <option value="0% Consumed">0% Consumed</option>
+                        <option value="10% Consumed">10% Consumed</option>
+                        <option value="20% Consumed">20% Consumed</option>
+                        <option value="30% Consumed">30% Consumed</option>
+                        <option value="40% Consumed">40% Consumed</option>
+                        <option value="50% Consumed">50% Consumed</option>
+                        <option value="60% Consumed">60% Consumed</option>
+                        <option value="70% Consumed">70% Consumed</option>
+                        <option value="80% Consumed">80% Consumed</option>
+                        <option value="90% Consumed">90% Consumed</option>
+                        <option value="100% Consumed">100% Consumed</option>
+                    </select>
+                    <input type="text" id="intake-description">
+                </div>
+                <hr>
+                <div class="form-row io">
+                    <h3 class="row-header">Output:</h3>
+                    <input type="text" id="output-value">
+                    <h4 style="margin: auto 0">ml</h4>
+                    <select name="output-method" id="output-method">
+                        <option value="default">Method</option>
+                        <option value="Emesis">Emesis</option>
+                        <option value="Urine">Urine</option>
+                        <option value="NG">NG</option>
+                        <option value="Stool">Stool</option>
+                        <option value="Wound">Wound</option>
+                        <option value="Drain">Drain</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="row-placeholder"></div>
+                    <input type="text" id="output-description">
+                </div>
+                <hr>
+                <div class="form-row io">
+                    <h3 class="row-header">Total:</h3>
+                    <input type="text" id="total-io-value">
+                    <h4 style="margin: auto 0">ml</h4>
+                    <select name="total-io-method" id="total-io-method">
+                        <option value="default">Fluid Shift</option>
+                        <option value="Loss">Loss</option>
+                        <option value="None">None</option>
+                        <option value="Gain">Gain</option>
+                    </select>
+                    <select name="total-time-io" id="total-time-io">
+                        <option value="default">Total Time</option>
+                        <option value="8 Hours">8 Hours</option>
+                        <option value="12 Hours">12 Hours</option>
+                        <option value="24 Hours">24 Hours</option>
+                    </select>
+                    <input type="text" id="total-io-description">
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container po">
+            <div class="container-header po" style="grid-area: form-header">
+                <h2>PO Intake:</h2>
+            </div>
+            <div class="column-header-container po" style="grid-area: column-headers">
+                <h3 class="column-header" style="grid-column: 1">Vital</h3>
+                <h3 class="column-header" style="grid-column: 2">Value</h3>
+                <h3 class="column-header" style="grid-column: 3">Unit</h3>
+                <h3 class="column-header" style="grid-column: 4">Description</h3>
+            </div>
+            <form action="server.php" method="post" style="grid-area: form" class="po-form">
+                <hr>
+                <div class="form-row po">
+                    <h3 class="row-header">Meal Consumed:</h3>
+                    <input type="text" id="meal-consumed-value">
+                    <h4 style="margin: auto 0">%</h4>
+                    <input type="text" id="meal-consumed-description">
+                </div>
+            </form>
+        </div>
+<!-- -->
         <div class="form-container glucose">
             <div class="container-header glucose" style="grid-area: form-header">
                 <h2>Capillary blood glucose reading:</h2>
@@ -320,6 +676,7 @@ include "../local/patientGlanceHeader.php";
                 </div>
             </form>
         </div>
+
 
         <div class="form-container survey">
             <div class="container-header survey" style="grid-area: form-header">
@@ -994,13 +1351,13 @@ include "../local/patientGlanceHeader.php";
                     </div>
                     <input type="text" id="gen-activity-description">
                 </div>
-                
-                <button id="vital-submit">Submit</button>
             </form>
         </div>
     </div>
 </main>
 
+<button class="submit-back-button">Back</button>
+<a href="../Dashboard.php"><button id="vital-submit">Submit</button></a>
 
 <script src="../local/vitalDataGather.js"></script>
 </body>

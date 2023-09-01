@@ -1,6 +1,7 @@
 body {
     padding: 0 0 25px 0;
 }
+
 #vital-submit, #patient-draft-submit, #orders-submit {
     position: -webkit-sticky;
     position: sticky;
@@ -14,11 +15,31 @@ body {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
     border: none;
 }
 
-.submit-back-button{
+#patient-draft-submit {
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3px 2px 3px #7e7e7e;
+}
+
+#vitals-input {
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3px 2px 3px #7e7e7e;
+}
+
+.submit-back-button {
     position: -webkit-sticky;
     position: sticky;
     bottom: 25px;
@@ -36,7 +57,8 @@ body {
 }
 
 #vital-submit:hover, #patient-draft-submit:hover, #orders-submit:hover{
-    background: #0c1f3b;
+    filter: brightness(.75);
+    cursor: pointer;
 }
 .form-container {
     display: grid;
@@ -61,6 +83,7 @@ body {
 }
 
 /*TPR GRID*/
+
 .column-header-container.tpr {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 6fr 2fr;
@@ -71,6 +94,7 @@ body {
 }
 
 /*CRIES, NONVERBAL PAIN, & RASS GRID*/
+
 .column-header-container.cries, .column-header-container.pain, .column-header-container.nvp, .column-header-container.rass {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -95,6 +119,7 @@ body {
 }
 
 /*PAIN SCALE GRID*/
+
 .column-header-container.pain-scale {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -105,6 +130,7 @@ body {
 }
 
 /*INTAKE OUTPUT GRID*/
+
 .column-header-container.io {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 4fr 2fr;
@@ -115,6 +141,7 @@ body {
 }
 
 /*PO Intake & GLUCOSE Grid*/
+
 .column-header-container.po, .column-header-container.glucose {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
@@ -129,6 +156,7 @@ body {
 }
 
 /*SURVEY GRID*/
+
 .column-header-container.survey {
     display: grid;
     grid-template-columns: 7fr;
@@ -143,6 +171,7 @@ body {
 }
 
 /*NEW ORDER GRID*/
+
 .column-header-container.new-order {
     display: grid;
     grid-template-columns: 1.25fr 4fr;
@@ -155,6 +184,7 @@ body {
 }
 
 /*ORDER COMMENT GRID*/
+
 .column-header-container.order-comments {
     display: grid;
     grid-template-columns: 1fr 1.5fr 4fr;
@@ -167,6 +197,7 @@ body {
 }
 
 /*PATIENT DRAFT GRID*/
+
 .form-row.patient-draft {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -179,7 +210,7 @@ body {
     width: 100%;
 }
 
-.form-row.patient-span{
+.form-row.patient-span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 4em;
@@ -200,6 +231,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    
 }
 
 .input-group input {
@@ -254,6 +286,7 @@ input[type=text], select, input[type=datetime-local] {
     overflow: hidden;
     width: 90%;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+    height: 45%;
 }
 option {
     text-overflow: clip;
@@ -382,27 +415,20 @@ option {
 }
 
 /*LOGIN PAGE STYLES*/
+
 .login-container {
     background: #EEEEEE;
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-    width: 40%;
-    height: 30%;
-    position: absolute;
-    right: 30%;
-    top: 35%;
+    width: 45vw;
+    height: 40vh;
+    margin: 30vh 27.5vw 30vh 27.5vw;
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 
 .login-content {
-    min-width: 100%;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: center;
+    width: 100%;
 }
 
 #login-password, #login-username {
@@ -440,11 +466,23 @@ option {
 }
 
 .login-container img {
-    width: 75px;
+    width: 12%;
+}
+
+#patient_vital_input {
+    width: 100vw;
+    padding-left: 13%;
+    padding-right: 2%;
+}
+
+.sex input {
+    flex-direction: flex;
 }
 
 @media (max-height: 800px) {
     .login-container {
-        height: 50%;
+        height: 50vh;
+        width: 50vw;
+        margin: 30vh 25vw 25vh 25vw;
     }
 }

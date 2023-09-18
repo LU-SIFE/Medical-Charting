@@ -20,9 +20,9 @@ Charting software and documentation for Catalyst medical classes
 
 ### Year 3:
 
-> Lucy Leix
-> Seth Troxel
-> Bryson Brown
+> Lucy Leix<br>
+> Seth Troxel<br>
+> Bryson Brown<br>
 
 to setup xamp tables:
 ```

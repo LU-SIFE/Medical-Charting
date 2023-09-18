@@ -1,4 +1,4 @@
-<?php include('session.php'); 
+<?php include('../scripts/session.php'); 
 //<div class="logout">
 //<li class="logout"><a href="logout.php">LOGOUT</a></li>
 //</div> 
@@ -23,15 +23,15 @@
        <img src="assets/catalyst-logo-blue.png" alt="Catalyst Logo">
        <nav>
            <ul>
-               <li><a href="dashboard.php">HOME</a></li>
-               <li><a href="patients.php">PATIENTS</a></li>
+               <li><a href="dashboard/index.php">HOME</a></li>
+               <li><a href="patients/index.php">PATIENTS</a></li>
            </ul>
        </nav>
    </header>  
 <section class="hero">
     <h1>Welcome to<br>Catalyst Charting!</h1>
     <br>
-    <p><a href="logout.php">LOGOUT</a></p>
+    <p><a href="../scripts/logout.php">LOGOUT</a></p>
 </section>
 </body>
 </html>

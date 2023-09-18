@@ -3,7 +3,7 @@
 session_start();
 // If the user is logged in, redirect to dashboard
 if (isset($_SESSION['loggedin'])) {
-    header('Location: dashboard.php');
+    header('Location: dashboard/index.php');
     exit;
 }
 ?>
@@ -14,9 +14,9 @@ if (isset($_SESSION['loggedin'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<?php include('connect.php'); ?>
-    <link rel="stylesheet" href="local/formStyles.css">
-    <link rel="stylesheet" href="local/styles.css">
+<?php include('scripts/connect.php'); ?>
+    <link rel="stylesheet" href="css/formStyles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Charting Login</title>
 </head>
@@ -27,11 +27,11 @@ if (isset($_SESSION['loggedin'])) {
             <div class="login-content">
                 
                 <div class="horizontal-group around">
-                    <img src="../assets/catalyst-logo-blue.png" alt="Catalyst Logo">
+                    <img src="assets/catalyst-logo-blue.png" alt="Catalyst Logo">
                     <h1>Login</h1>
                 </div>
                 
-                <form method="post" action="auth.php" name="Sign in">
+                <form method="post" action="scripts/auth.php" name="Sign in">
                     <div class="flex-form">
                     <div class="horizontal-group">
                         <input type="text" name="username-medical" placeholder="Username" id="login-username" required />

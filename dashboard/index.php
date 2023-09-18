@@ -11,20 +11,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale =1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="local/formStyles.css">
-    <link rel="stylesheet" href="local/styles.css">
-    <link rel="sidebar" href="sidebar.html">
-    <link rel="sidebarstyle" href="sidebarStyle.css">
+    <link rel="stylesheet" href="../css/formStyles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="sidebar" href="../sidebar/index.html">
+    <link rel="sidebarstyle" href="../sidebar/sidebarStyle.css">
     <title>Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="assets/catalyst-logo-blue-favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/catalyst-logo-blue-favicon.png">
     </head>
 <body>
    <header>
-       <img src="assets/catalyst-logo-blue.png" alt="Catalyst Logo">
+       <img src="../assets/catalyst-logo-blue.png" alt="Catalyst Logo">
        <nav>
            <ul>
-               <li><a href="dashboard/index.php">HOME</a></li>
-               <li><a href="patients/index.php">PATIENTS</a></li>
+               <li><a href="#">HOME</a></li>
+               <li><a href="../patients/index.php">PATIENTS</a></li>
            </ul>
        </nav>
    </header>  

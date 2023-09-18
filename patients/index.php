@@ -1,4 +1,4 @@
- <?php include('session.php'); 
+ <?php include('../scripts/session.php'); 
 //<div class="logout">
 //<li class="logout"><a href="logout.php">LOGOUT</a></li>
 //</div>
@@ -11,16 +11,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="local/formStyles.css">
-    <link rel="stylesheet" href="local/styles.css">
+    <link rel="stylesheet" href="../css/formStyles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Patients</title>
 </head>
     <header>
-       <img src="assets/catalyst-logo-blue.png" alt="Catalyst Logo">
+       <img src="../assets/catalyst-logo-blue.png" alt="Catalyst Logo">
        <nav>
            <ul>
-               <li><a href="dashboard.php">HOME</a></li>
-               <li><a href="patients.php">PATIENTS</a></li>
+               <li><a href="../dashboard/index.php">HOME</a></li>
+               <li><a href="#">PATIENTS</a></li>
            </ul>
        </nav>
    </header> 
@@ -51,7 +51,7 @@
     </div>
 
     <div class="logout">
-       <p><a href="logout.php">LOGOUT</a></p>
+       <p><a href="../scripts/logout.php">LOGOUT</a></p>
     </div>
 
 </body>

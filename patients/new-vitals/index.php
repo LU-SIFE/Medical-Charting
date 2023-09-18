@@ -19,15 +19,15 @@
 </head>
 <body>
 <?php
-$profilePath = "../assets/empty-profile.png";
-$headerLogoPath = "../assets/catalyst-logo-blue.png";
-include "../local/patientGlanceHeader.php";
+$profilePath = "../../assets/empty-profile.png";
+$headerLogoPath = "../../assets/catalyst-logo-blue.png";
+include "../../patientGlanceHeader.php";
 ?>
 
 
 <main>
     <?php
-    include "../sidebar.html"
+    include "../../sidebar/indexr.html"
     ?>
     <div class="form-overflow-container" id="patient_vital_input">
         
@@ -184,7 +184,7 @@ include "../local/patientGlanceHeader.php";
                 <h3 class="column-header" style="grid-column: 2">Value</h3>
                 <h3 class="column-header" style="grid-column: 3">Description</h3>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="pain-form">
+            <form action="../../scripts/server.php" method="post" style="grid-area: form" class="pain-form">
                 <hr>
                 <div class="form-row pain">
                     <h3 class="row-header pain">Pain:</h3>
@@ -219,7 +219,7 @@ include "../local/patientGlanceHeader.php";
                 <h3 class="column-header" style="grid-column: 4">Qualifier(s)</h3>
                 <h3 class="column-header" style="grid-column: 5">Description</h3>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="growth-form">
+            <form action="../../scripts/server.php" method="post" style="grid-area: form" class="growth-form">
                 <hr>
                 <div class="form-row growth">
                     <h3 class="row-header">Weight:</h3>
@@ -306,7 +306,7 @@ include "../local/patientGlanceHeader.php";
                 <h3 class="column-header" style="grid-column: 3">Unit</h3>
                 <h3 class="column-header" style="grid-column: 4">Description</h3>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="glucose-form">
+            <form action="../../scripts/server.php" method="post" style="grid-area: form" class="glucose-form">
                 <hr>
                 <div class="form-row glucose">
                     <h3 class="row-header">Capillary Blood Glucose Reading:</h3>
@@ -325,7 +325,7 @@ include "../local/patientGlanceHeader.php";
             <div class="container-header survey" style="grid-area: form-header">
                 <h2>Survey:</h2>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="survey-form">
+            <form action="../../scripts/server.php" method="post" style="grid-area: form" class="survey-form">
                 <!--                LEVEL OF CONSCIOUSNESS AND ORIENTATION SURVEY-->
                 <div class="column-header-container survey" style="grid-area: column-headers">
                     <h3 class="column-header" style="grid-column: 1">Level of Consciousness and Orientation:</h3>

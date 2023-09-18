@@ -1,3 +1,5 @@
+<!-- PUBLICHOME -->
+
 <?php include('../session.php'); ?>
 
 <!doctype html>

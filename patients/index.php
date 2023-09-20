@@ -1,6 +1,6 @@
  <?php include('../scripts/session.php'); 
 //<div class="logout">
-//<li class="logout"><a href="logout.php">LOGOUT</a></li>
+//<li class="logout"><a href="../scripts/logout.php">LOGOUT</a></li>
 //</div>
 ?>
 
@@ -25,7 +25,7 @@
        </nav>
    </header> 
 <body>
-    <a class="new-button" href="Patient-Data-Forms/patientDraft.php">New</a>
+    <a class="new-button" href="new/patientDraft.php">New</a>
     <div class="category-container">
         <h1 class="category-header">Patients</h1>
         <div class="sub-category">
@@ -36,7 +36,7 @@
                     <h4>SSN:<div class="patient_name ">000-00-001</div></h4>
                     <h4>MR#:<div class="patient_name ">000-00-001</div></h4>
                 </div>
-                <a class="glance-button" href="public/publicHome.php">View</a>
+                <a class="glance-button" href="vitals/index.php">View</a>
             </div>
             <div class="sub-category-glance">
                 <div class="glance-data2">
@@ -45,7 +45,7 @@
                     <h4>SSN:<br>789-69-654</h4>
                     <h4>MR#:<br>456-789-01 </h4>
                 </div>
-                <a class="glance-button" href="public/publicHome.php" title="View vitals">View</a>
+                <a class="glance-button" href="vitals/index.php" title="View vitals">View</a>
             </div>
         </div>
     </div>

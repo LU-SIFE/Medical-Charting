@@ -11,23 +11,23 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <?php
-    include "../local/sidebarReq.html"
+    include "../../scripts/sidebarReq.html"
     ?>
 
-    <link rel="stylesheet" href="../local/styles.css">
-    <link rel="stylesheet" href="../local/formStyles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/formStyles.css">
 </head>
 <body>
 <?php
 $profilePath = "../../assets/empty-profile.png";
 $headerLogoPath = "../../assets/catalyst-logo-blue.png";
-include "../../patientGlanceHeader.php";
+include "../patientGlanceHeader.php";
 ?>
 
 
 <main>
     <?php
-    include "../../sidebar/indexr.html"
+    include "../../sidebar/index.html"
     ?>
     <div class="form-overflow-container" id="patient_vital_input">
         
@@ -42,7 +42,7 @@ include "../../patientGlanceHeader.php";
                 <h3 class="column-header" style="grid-column: 4">Qualifier(s)</h3>
                 <h3 class="column-header" style="grid-column: 5">Description</h3>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="tpr-form">
+            <form action="../../scripts/server.php" method="post" style="grid-area: form" class="tpr-form">
                 <hr>
                 <div class="form-row tpr">
                     <h3 class="row-header tpr">Temperature:</h3>
@@ -1002,6 +1002,6 @@ include "../../patientGlanceHeader.php";
 </main>
 
 
-<script src="../local/vitalDataGather.js"></script>
+<script src="../../scripts/js/vitalDataGather.js"></script>
 </body>
 </html>

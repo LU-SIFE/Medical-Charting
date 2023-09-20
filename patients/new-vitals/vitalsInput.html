@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../local/styles.css">
-    <link rel="stylesheet" href="../local/formStyles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/formStyles.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
@@ -17,7 +17,7 @@
 <header>
     <div class="header-content">
         <div class="img-frame">
-            <img src="../assets/empty-profile.png" alt="profile" class="patient-photo">
+            <img src="../../assets/empty-profile.png" alt="profile" class="patient-photo">
         </div>
         <div class="patient-glance">
             <h2 class="patient-glance-content"><span>Patient Name: </span>Johnny Appleseed</h2>
@@ -25,7 +25,7 @@
             <h2 class="patient-glance-content"><span>MR#: </span>CC12345</h2>
         </div>
     </div>
-    <div class="header-logo"><img src="../assets/catalyst-logo.png" alt="catalyst logo"></div>
+    <div class="header-logo"><img src="../../assets/catalyst-logo.png" alt="catalyst logo"></div>
 </header>
 
 
@@ -40,7 +40,7 @@
             <h3 class="column-header" style="grid-column: 4">Qualifier(s)</h3>
             <h3 class="column-header" style="grid-column: 5">Description</h3>
         </div>
-        <form action="server.php" method="post" style="grid-area: form" class="tpr-form">
+        <form action="../../scripts/server.php" method="post" style="grid-area: form" class="tpr-form">
             <hr>
             <div class="form-row tpr">
                 <h3 class="row-header tpr">Temperature:</h3>
@@ -182,7 +182,7 @@
             <h3 class="column-header" style="grid-column: 2">Value</h3>
             <h3 class="column-header" style="grid-column: 3">Description</h3>
         </div>
-        <form action="server.php" method="post" style="grid-area: form" class="pain-form">
+        <form action="../../scripts/server.php" method="post" style="grid-area: form" class="pain-form">
             <hr>
             <div class="form-row pain">
                 <h3 class="row-header pain">Pain:</h3>
@@ -214,7 +214,7 @@
             <h3 class="column-header" style="grid-column: 2">Value</h3>
             <h3 class="column-header" style="grid-column: 3">Description</h3>
         </div>
-        <form action="server.php" method="post" style="grid-area: form" class="cries-form">
+        <form action="../../scripts/server.php" method="post" style="grid-area: form" class="cries-form">
             <hr>
             <div class="form-row cries">
                 <h3 class="row-header cries">Crying:</h3>
@@ -644,7 +644,7 @@
         <div class="container-header survey"  style="grid-area: form-header">
             <h2>Survey:</h2>
         </div>
-        <form action="server.php" method="post" style="grid-area: form" class="survey-form">
+        <form action="../../scripts/server.php" method="post" style="grid-area: form" class="survey-form">
 <!--                LEVEL OF CONSCIOUSNESS AND ORIENTATION SURVEY-->
             <div class="column-header-container survey" style="grid-area: column-headers">
                 <h3 class="column-header" style="grid-column: 1">Level of Consciousness and Orientation:</h3>
@@ -1318,6 +1318,6 @@
 
     <button id="vital-submit">Submit</button>
 
-    <script src="../local/vitalDataGather.js"></script>
+    <script src="../../scripts/js/vitalDataGather.js"></script>
 </body>
 </html>

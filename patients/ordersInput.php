@@ -5,11 +5,11 @@
     <title>Orders</title>
 
     <?php
-    include "../local/sidebarReq.html"
+    include "../scripts/sidebarReq.html"
     ?>
 
-    <link rel="stylesheet" href="../local/formStyles.css">
-    <link rel="stylesheet" href="../local/styles.css">
+    <link rel="stylesheet" href="../css/formStyles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -20,12 +20,12 @@
 <?php
 $profilePath = "../assets/empty-profile.png";
 $headerLogoPath = "../assets/catalyst-logo.png";
-include "../local/patientGlanceHeader.php";
+include "patientGlanceHeader.php";
 ?>
 
 <main>
     <?php
-    include "../sidebar.html"
+    include "../sidebar/index.html"
     ?>
 
     <div class="form-overflow-container">
@@ -37,7 +37,7 @@ include "../local/patientGlanceHeader.php";
                 <h3 class="column-header" style="grid-column: 1">Parameter</h3>
                 <h3 class="column-header" style="grid-column: 2">Value</h3>
             </div>
-            <form action="server.php" method="post" style="grid-area: form" class="tpr-form">
+            <form action="../scripts/server.php" method="post" style="grid-area: form" class="tpr-form">
                 <hr>
                 <div class="form-row new-order">
                     <h3 class="row-header">Order Type</h3>
@@ -372,8 +372,8 @@ include "../local/patientGlanceHeader.php";
 
 <button id="orders-submit">Submit</button>
 
-<script src="../local/orderDataGather.js"></script>
+<script src="../scripts/js/orderDataGather.js"></script>
 
-<script src="../local/ordersJs.js"></script>
+<script src="../scripts/js/ordersJs.js"></script>
 </body>
 </html>

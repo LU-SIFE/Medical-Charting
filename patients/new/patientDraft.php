@@ -36,10 +36,10 @@
             <div class="container-header patient-draft" style="grid-area: form-header">
                 <h2>Patient Information</h2>
             </div> 
-            <form action="patient_new.php" method="POST" class="patient-draft-form">
+            <form action="../../scripts/patient_new.php" method="POST" class="patient-draft-form">
                 <hr>
                 <div class="form-row patient-draft-img">
-                    <img src="../assets/empty-profile.png" alt="patient profile">
+                    <img src="../../assets/empty-profile.png" alt="patient profile">
                     <div class="row-span-container">
                         <div class="form-row patient-span">
                             <div class="input-group">

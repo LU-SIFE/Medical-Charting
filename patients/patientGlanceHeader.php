@@ -10,5 +10,5 @@
             <h2 class="patient-glance-content_allergies"><span>Allergies: </span></h2>
         </div>
     </div>
-    <div class="header-logo"><a href="../dashboard/index.php"><img src="<?php echo $headerLogoPath ?>" alt="catalyst logo"></a></div>
+    <div class="header-logo"><a href="/dashboard/index.php"><img src="<?php echo $headerLogoPath ?>" alt="catalyst logo"></a></div>
 </header>

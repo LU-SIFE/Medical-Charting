@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patient Draft</title>
     
-    <link rel="stylesheet" href="../local/formStyles.css">
-    <link rel="stylesheet" href="../local/styles.css">
+    <link rel="stylesheet" href="../../css/formStyles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -21,11 +21,11 @@
 <body>
 
 <header>
-    <img src="../assets/catalyst-logo-blue.png" alt="Catalyst Logo">
+    <img src="../../assets/catalyst-logo-blue.png" alt="Catalyst Logo">
        <nav>
            <ul>
-               <li><a href="../dashboard.php">HOME</a></li>
-               <li><a href="../patients.php">PATIENTS</a></li>
+               <li><a href="../../dashboard/index.php">HOME</a></li>
+               <li><a href="../index.php">PATIENTS</a></li>
            </ul>
        </nav>
    </header>  

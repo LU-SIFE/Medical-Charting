@@ -40,7 +40,11 @@
                 <hr>
                 <div class="form-row patient-draft-img">
                     <img src="../../assets/empty-profile.png" alt="patient profile">
+
+                    
+
                     <div class="row-span-container">
+                        <input type="file" id="myFile" name="image">
                         <div class="form-row patient-span">
                             <div class="input-group">
                                 <label for="first-name">First Name*</label>

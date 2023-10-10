@@ -183,11 +183,12 @@ main {
     font-size: 1.25em;
     text-align: center;
     text-decoration: none;
-    padding-top: 0.5em;
     flex: 1;
     align-self: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
 .glance-button:hover {
@@ -322,27 +323,9 @@ header img{
     flex-direction: column;
 }
 
-/* Back Button styles */
-
-.back-button{
-    background: #143058;
-    border-radius: 10px;
-    height: 1.75em;
-    color: white;
-    font-size: 1.25em;
-    border: none;
-    width: 17%;
-    float: right;
-    margin: 0 5px;
-    margin-top: 1.5em;
-    text-align:center;
-    text-decoration:none;
-    padding-top:.5em;
-}
-
 /* New button styles */ 
 
-.new-button{
+.new-button, .back-button{
     background: #143058;
     border-radius: 10px;
     height: 1.75em;
@@ -352,10 +335,15 @@ header img{
     width: 20%;
     float: right;
     margin-right: 2vw;
-    margin-top: 1.5vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
     text-align:center;
     text-decoration:none;
     padding-top: .5em;
+}
+
+.back-button {
+    margin-top: 2vh;
 }
 
 .new-button:hover, .back-button:hover{

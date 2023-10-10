@@ -37,7 +37,6 @@
     <br>
     <a class="new-button" href="../new-vitals/index.php">New</a>
     <br>
-    <h2 class="sub-category-head">TPR B/P O2</h2>
     <div class="sub-category">
         
         <div class="sub-category-glance">

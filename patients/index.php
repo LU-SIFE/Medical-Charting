@@ -32,7 +32,7 @@
             <div class="sub-category-glance">
                 <div class="glance-data2">
                     <h4>Name:<div class="patient_name ">John Doe</div></h4>
-                    <h4>DoB:<div class="patient_name ">1/1/1</div></h4>
+                    <h4>DOB:<div class="patient_name ">1/1/1</div></h4>
                     <h4>SSN:<div class="patient_name ">000-00-001</div></h4>
                     <h4>MR#:<div class="patient_name ">000-00-001</div></h4>
                 </div>
@@ -41,7 +41,7 @@
             <div class="sub-category-glance">
                 <div class="glance-data2">
                     <h4>Name:<br>Johny Appleseed</h4>
-                    <h4>DoB:<br>8/24/1774 </h4>
+                    <h4>DOB:<br>8/24/1774 </h4>
                     <h4>SSN:<br>789-69-654</h4>
                     <h4>MR#:<br>456-789-01 </h4>
                 </div>

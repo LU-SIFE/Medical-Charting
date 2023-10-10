@@ -69,9 +69,9 @@ if (isset($_POST["medQuery"])) {
 if (isset($_POST["authorQuery"])) {
     //DATABASE CREDENTIALS
     $servername = 'localhost';
-    $userName = 'phpAccess';
-    $password = '1234';
-    $dbName = 'medical_assisting';
+    $userName = 'catalystuser24';
+    $password = 'downloud42';
+    $dbName = 'chart_db';
 
     //DATABASE CONNECTION
     $conn = new mysqli($servername, $userName, $password, $dbName);

@@ -1,5 +1,5 @@
 <?php
-echo = "test";
+    echo "test";
     $first_name = $_POST['first_name'];
     $alias_name = $_POST['alias_name'];
     $dob = $_POST['dob'];
@@ -54,15 +54,15 @@ if (!empty($first_name) || !empty($dob) || !empty($last_name) || !empty($sex) ||
             $stmt = $conn->prepare($INSERT);
             $stmt->bind_param("sssssssssssssssssssssssss", $first_name, $alias_name, $dob, $suffix, $last_name, $sex, $mrn, $marital_status, $middle_name, $gender_identity, $ssn, $language, $race_ethicity, $street_address,  $apartment_num, $city, $state_province, $zip_code, $email, $home_phone, $cell_phone, $employment_status, $employer, $work_phone, $occupation);
             $stmt->execute();
-            echo = "New patient added sucessfully";
+            echo "New patient added sucessfully";
         } else {
-            echo = "Patient with this SSN already exist";
+            echo "Patient with this SSN already exist";
         }
         $stmt->close();
         $conn->close();
     }
 } else {
-    echo = "All fields are required";
+    echo "All fields are required";
     die();
 }
 

@@ -118,6 +118,7 @@ main {
 .sub-category {
     margin: 5vh .5vw 1vh .5vw;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sub-category-head {
@@ -325,7 +326,7 @@ header img{
 
 /* New button styles */ 
 
-.new-button, .back-button{
+.new-button, .back-button, .delete button {
     background: #143058;
     border-radius: 10px;
     height: 1.75em;
@@ -350,6 +351,32 @@ header img{
     filter: brightness(.75);
     cursor: pointer;
 }
+
+.view-form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.view-form button {
+    width: 100%;
+}
+
+.delete {
+    margin-left: auto;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.delete button {
+    padding: 20px;
+}
+
 
 /* Laptop size changes */
 

@@ -1,4 +1,5 @@
 <?php
+    //Variables UwU
     $first_name = $_POST['first_name'];
     $alias_name = $_POST['alias_name'];
     $dob = $_POST['dob'];
@@ -52,10 +53,8 @@
     }
 
 //
+// Image uploads ^w^ c:
 //
-//
-
-
     
 $target_dir = "../uploaded_imgs/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -82,7 +81,7 @@ if (file_exists($target_name)) {
 }
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 5000000) {
   echo "Sorry, your file is too large.<br>";
   $uploadOk = 0;
 }
@@ -97,12 +96,15 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
+  header('Location: ../patients/index.php');
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_name)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    header('Location: ../patients/index.php');
   } else {
     echo "Sorry, there was an error uploading your file.";
+    header('Location: ../patients/index.php');
   }
 }
 ?>

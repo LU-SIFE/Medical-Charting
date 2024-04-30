@@ -85,6 +85,7 @@
                                         <option value="placeholder"></option>
                                         <option name="sex" value="f">Female</option>
                                         <option name="sex" value="m">Male</option>
+                                        <option name="sex" value="m">Other</option>
                                     </select>
                             </div>
                             <div class="input-group">

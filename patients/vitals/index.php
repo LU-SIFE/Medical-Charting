@@ -21,14 +21,41 @@
 <body>
 
 <header>
-    <div class="img-frame">
-        <img src="../../assets/Johnny%20Appleseed.png" alt="profile" class="patient-photo">
-    </div>
-    <div class="patient-glance">
-        <h2 class="patient-glance-content"><span>Patient Name: </span>Johnny Appleseed</h2>
-        <h2 class="patient-glance-content"><span>DOB: </span>01/01/1950</h2>
-        <h2 class="patient-glance-content"><span>MR#: </span>CC12345</h2>
-    </div>
+
+    <?php 
+            $servername = "localhost";
+            $username = "catalystuser24";
+            $password = "downloud42";
+            $dbname = "chart_db";
+
+            $con = new mysqli($servername, $username, $password, $dbname);
+
+            if ($con->connect_error) {
+                die("Connection failed: " . $con->connect_error);
+            }
+            $value = $_GET['id'];
+
+            $query = mysqli_query($con,"SELECT * FROM patients WHERE id='$value'"); 
+            $row = mysqli_fetch_array($query);
+
+                echo '
+                    <div class="img-frame">
+                        <img src="../../uploaded_imgs/'.strtolower($row['alias_name']).'_'.strtolower($row['last_name']).'.jpg" alt="profile" class="patient-photo">
+                    </div>
+                    
+                    <form class="delete" action="../../scripts/delete.php" method="get">
+                    <button class="glance-button" name="id" type="submit" value="'.$row['id'].'">
+                        Delete
+                    </button>
+                    </form>
+                    
+                    <div class="patient-glance">
+                        <h2 class="patient-glance-content"><span>Patient Name: </span>'.$row['first_name'].' '.$row['last_name'].'</h2>
+                        <h2 class="patient-glance-content"><span>DOB: </span>'.$row['dob'].'</h2>
+                        <h2 class="patient-glance-content"><span>MR#: </span>'.$row['mrn'].'</h2
+                    </div>';
+            
+        ?>
 </header>
     <a class="back-button" href="../index.php">Back</a>
     <br>
